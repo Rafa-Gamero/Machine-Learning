@@ -83,6 +83,7 @@ The file `card_transdata.csv` contains the following columns:
 - [Presentation]()
 
 You can contact us:
-- Ana Nofuentes Solano
-- Óscar Sánchez Riveros
-- Rafael Gamero Arrabal
+- [Ana Nofuentes Solano](https://www.linkedin.com/in/ana-nofuentes-solano-654026a3/)
+- [Óscar Sánchez Riveros](https://www.linkedin.com/in/oscar-sanchez-riveros/)
+- [Rafael Gamero Arrabal](https://www.linkedin.com/in/rafael-gamero-arrabal-619200186/)
+
