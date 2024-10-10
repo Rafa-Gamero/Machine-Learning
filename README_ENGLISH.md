@@ -79,8 +79,8 @@ The file `card_transdata.csv` contains the following columns:
 | Gradient Boosting   | 0.9979   | 0.9770    | 0.9998  | 0.9883   | 0.9988 |
 
 ## Links
-- Data
-- Presentation
+- [Data](https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud)
+- [Presentation]()
 
 You can contact us:
 - Ana Nofuentes Solano
