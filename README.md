@@ -57,10 +57,10 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **F1 Score**: 0.9991
 - **AUC**: 0.9999
 - **Confusion Matrix**:
-- ![Matriz de Confusion Árbol de Decisión](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165000.png)
+- ![Matriz de Confusion Árbol de Decisión](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165000.png)
 
 - **Gráfico de Importancia de Variables**:
-![Importancia Variables Árbol de Decisión](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165015.png)
+![Importancia Variables Árbol de Decisión](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165015.png)
 
 ### Random Forest
 - **Accuracy**: 0.9999
@@ -69,10 +69,10 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **F1 Score**: 0.9992
 - **AUC**: 0.9999
 - **Confusion Matrix**:
-- ![Matriz de Confusion Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165029.png)
+- ![Matriz de Confusion Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165029.png)
 
 - **Gráfico de Importancia de Variables**:
-![Importancia Variables Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20164943.png)
+![Importancia Variables Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165047.png)
 
 ### Gradient Boosting
 - **Accuracy**: 0.9979
@@ -81,10 +81,10 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **F1 Score**: 0.9883
 - **AUC**: 0.9988
 - **Confusion Matrix**:
-![Matriz de confusion Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165059.png)
+![Matriz de confusion Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165059.png)
 
 - **Gráfico de Importancia de Variables**:
-![Importancia Variables Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165110.png)
+![Importancia Variables Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165110.png)
 
 ### Cuadro Comparativo de Métricas
 
