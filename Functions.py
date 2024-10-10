@@ -154,7 +154,7 @@ def evaluate_model_with_confusion(model, X_test, y_test, model_name="Modelo"):
     auc = roc_auc_score(y_test, y_pred)
 
     # Crear una figura
-    fig, ax = plt.subplots(1, 2, figsize=(12, 5))  # Dos columnas
+    fig, ax = plt.subplots(1, 2, figsize=(10, 5))  # Dos columnas
 
     # Cuadro de métricas
     metrics_text = (f"Resultados del {model_name}:\n"
@@ -197,3 +197,27 @@ def plot_feature_importance(model, X_train, model_name="Modelo"):
         plt.show()
     else:
         print(f"El modelo {model_name} no soporta la importancia de variables.")
+
+
+def plot_logistic_regression_importance(model, X_train):
+    """
+    Función para graficar la importancia de las variables en un modelo de regresión logística.
+
+    :param model: Modelo de regresión logística ajustado (LogisticRegression).
+    :param X_train: DataFrame de pandas que contiene las características utilizadas para ajustar el modelo.
+    """
+    # Obtener los coeficientes del modelo de regresión logística
+    coef_importance = pd.Series(np.abs(model.coef_[0]), index=X_train.columns)
+
+    coef_importance.sort_values(ascending=False, inplace=True)
+
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=coef_importance.values, y=coef_importance.index)
+
+    plt.title("Importancia de Variables en Regresión Logística", fontsize=16)
+    plt.xlabel("Importancia (Valor Absoluto del Coeficiente)", fontsize=12)
+    plt.ylabel("Características", fontsize=12)
+
+    plt.tight_layout()
+
+    plt.show()     
