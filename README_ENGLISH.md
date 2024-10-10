@@ -45,7 +45,7 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.7180
 - **AUC**: 0.9427
 - **Confusion Matrix**:
-- ![Matriz de Confusion Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
+ ![Matriz de Confusion Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
 
 ### Decision Tree
 - **Accuracy**: 0.9998
