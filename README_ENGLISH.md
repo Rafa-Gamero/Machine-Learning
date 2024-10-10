@@ -47,6 +47,7 @@ The file `card_transdata.csv` contains the following columns:
 - **Confusion Matrix**:
  ![Matriz de Confusion Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
 
+
 - **Variable Importance Chart**:
  ![Importancia Variables Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164943.png)
 ### Decision Tree
