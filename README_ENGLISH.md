@@ -46,7 +46,7 @@ The file `card_transdata.csv` contains the following columns:
 - **AUC**: 0.9427
 - **Confusion Matrix**:
  ![Matriz de Confusion Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
-- **Variable Importance Chart:**
+- **Variable Importance Chart**:
  ![Importancia Variables Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164943.png)
 ### Decision Tree
 - **Accuracy**: 0.9998
@@ -55,7 +55,7 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.9991
 - **AUC**: 0.9999
 - **Confusion Matrix**: (Confusion Matrix for Decision Tree)
-- **Variable Importance Chart:**
+- **Variable Importance Chart**:
 ### Random Forest
 - **Accuracy**: 0.9999
 - **Precision**: 0.9984
@@ -63,7 +63,7 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.9992
 - **AUC**: 0.9999
 - **Confusion Matrix**: (Confusion Matrix for Random Forest)
-- **Variable Importance Chart:**
+- **Variable Importance Chart**:
 ### Gradient Boosting
 - **Accuracy**: 0.9979
 - **Precision**: 0.9770
@@ -71,7 +71,7 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.9883
 - **AUC**: 0.9988
 - **Confusion Matrix**: (Confusion Matrix for Gradient Boosting)
-- **Variable Importance Chart:**
+- **Variable Importance Chart**:
 ## Comparative Metrics Table
 | Model               | Accuracy | Precision | Recall  | F1 Score | AUC    |
 |---------------------|----------|-----------|---------|----------|--------|
