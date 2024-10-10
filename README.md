@@ -84,16 +84,16 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 ![Matriz de confusion Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165059.png)
 
 - **Gráfico de Importancia de Variables**:
-![Importancia Variables Gradient Boosting](ruta_imagen_gb.png)
+![Importancia Variables Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165110.png)
 
 ### Cuadro Comparativo de Métricas
 
 | Modelo               | Accuracy | Precision | Recall | F1 Score | AUC   |
 |----------------------|----------|-----------|--------|----------|-------|
-| Regresión Logística   | 0.9350   | 0.5762    | 0.9522 | 0.7180   | 0.9427|
-| Árbol de Decisión     | 0.9998   | 0.9981    | 1.0000 | 0.9991   | 0.9999|
-| Random Forest         | 0.9999   | 0.9984    | 1.0000 | 0.9992   | 0.9999|
-| Gradient Boosting     | 0.9979   | 0.9770    | 0.9998 | 0.9883   | 0.9988|
+| Regresión Logística   | 0.9344   | 0.5741    | 0.9522 | 0.7169   | 0.9434|
+| Árbol de Decisión     | 0.9998   | 0.9983    | 1.0000 | 0.9991   | 0.9999|
+| Random Forest         | 0.9999   | 0.9989    | 1.0000 | 0.9994   | 0.9999|
+| Gradient Boosting     | 0.9998   | 0.9987    | 0.9999 | 0.9993   | 0.9999|
 
 ## Enlaces 
 
