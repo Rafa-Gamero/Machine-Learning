@@ -45,10 +45,10 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.7180
 - **AUC**: 0.9427
 - **Confusion Matrix**:
-![Confusion Matrix Logistic Regression](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
+![Confusion Matrix Logistic Regression](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20164926.png)
 
 - **Feature Importance Chart**:
-![Feature Importance Logistic Regression](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164943.png)
+![Feature Importance Logistic Regression](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20164943.png)
 
 ### Decision Tree
 - **Accuracy**: 0.9998
@@ -57,10 +57,10 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.9991
 - **AUC**: 0.9999
 - **Confusion Matrix**:
-![Confusion Matrix Decision Tree](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165000.png)
+![Confusion Matrix Decision Tree](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165000.png)
 
 - **Feature Importance Chart**:
-![Feature Importance Decision Tree](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165015.png)
+![Feature Importance Decision Tree](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165015.png)
 
 ### Random Forest
 - **Accuracy**: 0.9999
@@ -69,10 +69,10 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.9992
 - **AUC**: 0.9999
 - **Confusion Matrix**:
-![Confusion Matrix Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165029.png)
+![Confusion Matrix Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165029.png)
 
 - **Feature Importance Chart**:
-![Feature Importance Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165047.png)
+![Feature Importance Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165047.png)
 
 ### Gradient Boosting
 - **Accuracy**: 0.9979
@@ -81,10 +81,10 @@ The file `card_transdata.csv` contains the following columns:
 - **F1 Score**: 0.9883
 - **AUC**: 0.9988
 - **Confusion Matrix**:
-![Confusion Matrix Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165059.png)
+![Confusion Matrix Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165059.png)
 
 - **Feature Importance Chart**:
-![Feature Importance Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165110.png)
+![Feature Importance Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20165110.png)
 
 ### Comparative Metrics Table
 
