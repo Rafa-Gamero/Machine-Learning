@@ -72,7 +72,7 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - ![Matriz de Confusion Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165029.png)
 
 - **Gráfico de Importancia de Variables**:
-![Importancia Variables Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165047.png)
+![Importancia Variables Random Forest](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/images/Captura%20de%20pantalla%202024-10-10%20164943.png)
 
 ### Gradient Boosting
 - **Accuracy**: 0.9979
