@@ -45,7 +45,7 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **F1 Score**: 0.7180
 - **AUC**: 0.9427
 - **Confusion Matrix**:
-![Matriz de Confusion Regresión Logística](https://drive.google.com/drive/u/0/folders/1i8hSUHFmY93ZWCZTIQDHe27LXVtgX16b)
+![Matriz de Confusion Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
 
 - **Gráfico de Importancia de Variables**:
 ![Importancia Variables Regresión Logística](ruta_imagen_logistica.png)
