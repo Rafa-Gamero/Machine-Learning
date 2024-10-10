@@ -20,6 +20,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.preprocessing import RobustScaler
 from imblearn.under_sampling import RandomUnderSampler
 from statsmodels.stats.outliers_influence import variance_inflation_factor
+from sklearn.model_selection import GridSearchCV
 
 
 def plot_target_balance(df, target_column='fraud'):
@@ -139,62 +140,60 @@ def plot_correlation_matrix(df):
     plt.show()
 
 
-def train_evaluate_and_plot(model, X_train, y_train, X_test, y_test, model_name="Modelo"):
-    """
-    Entrena un modelo clasificatorio, evalúa su rendimiento y grafica la importancia de las variables.
-    
-    Args:
-        model: El modelo a entrenar (ej: LogisticRegression, DecisionTreeClassifier, etc.).
-        X_train (pd.DataFrame): Datos de entrenamiento.
-        y_train (pd.Series): Variable objetivo de entrenamiento.
-        X_test (pd.DataFrame): Datos de prueba.
-        y_test (pd.Series): Variable objetivo de prueba.
-        model_name (str): Nombre del modelo para mostrar en los resultados y gráficos.
-    """
-    # Entrenar el modelo
-    model.fit(X_train, y_train)
-    
-    # Realizar predicciones
+def evaluate_model_with_confusion(model, X_test, y_test, model_name="Modelo"):
+    """Función para evaluar el modelo y mostrar métricas junto a la matriz de confusión."""
+    # Predicciones en el conjunto de prueba
     y_pred = model.predict(X_test)
     
-    # Calcular las métricas de rendimiento
+    # Calcular métricas
     accuracy = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred)
-    recall = recall_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred)
-    auc = roc_auc_score(y_test, y_pred)
+    precision = precision_score(y_test, y_pred, pos_label=1)
+    recall = recall_score(y_test, y_pred, pos_label=1)
+    f1 = f1_score(y_test, y_pred, pos_label=1)
     conf_matrix = confusion_matrix(y_test, y_pred)
-    
-    # Imprimir las métricas
-    print(f"Resultados para {model_name}:")
-    print(f"Accuracy: {accuracy:.4f}")
-    print(f"Precision: {precision:.4f}")
-    print(f"Recall: {recall:.4f}")
-    print(f"F1 Score: {f1:.4f}")
-    print(f"Confusion Matrix:\n{conf_matrix}")
-    print(f"AUC: {auc:.4f}")
+    auc = roc_auc_score(y_test, y_pred)
 
+    # Crear una figura
+    fig, ax = plt.subplots(1, 2, figsize=(12, 5))  # Dos columnas
 
-def plot_feature_importance(model, feature_names, model_name="Modelo"):
-    """
-    Grafica la importancia de las variables en un modelo.
+    # Cuadro de métricas
+    metrics_text = (f"Resultados del {model_name}:\n"
+                    f"Accuracy: {accuracy:.4f}\n"
+                    f"Precision: {precision:.4f}\n"
+                    f"Recall: {recall:.4f}\n"
+                    f"F1 Score: {f1:.4f}\n"
+                    f"AUC: {auc:.4f}")
     
-    Args:
-        model: El modelo entrenado (con coeficientes o atributos de importancia).
-        feature_names (list): Lista de nombres de las características.
-        model_name (str): Nombre del modelo para el título.
-    """
-    if hasattr(model, 'coef_'):  # Regresión logística
-        importances = pd.Series(np.abs(model.coef_[0]), index=feature_names)
-    elif hasattr(model, 'feature_importances_'):  # Árboles o ensembles
-        importances = pd.Series(model.feature_importances_, index=feature_names)
-    
-    importances.sort_values(ascending=True, inplace=True)
+    # Añadir el cuadro de texto
+    ax[0].text(0.5, 0.5, metrics_text, fontsize=12, ha='center', va='center')
+    ax[0].axis('off')  # Ocultar ejes
 
-    plt.figure(figsize=(8, 4))
-    importances.plot(kind='barh', color='skyblue')
-    plt.title(f"Importancia de Variables en {model_name}")
-    plt.xlabel("Importancia")
-    plt.ylabel("Características")
+    # Graficar la matriz de confusión
+    sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', cbar=False, ax=ax[1])
+    ax[1].set_title(f"Matriz de Confusión - {model_name}")
+    ax[1].set_ylabel('Clase verdadera')
+    ax[1].set_xlabel('Clase predicha')
+
     plt.tight_layout()
     plt.show()
+    
+
+
+def plot_feature_importance(model, X_train, model_name="Modelo"):
+    """Función para graficar la importancia de las variables."""
+    # Verificar si el modelo tiene el atributo `feature_importances_`
+    if hasattr(model, 'feature_importances_'):
+        # Obtener la importancia de las características
+        importance = pd.Series(model.feature_importances_, index=X_train.columns)
+        importance.sort_values(ascending=True, inplace=True)
+
+        # Graficar
+        plt.figure(figsize=(8, 4))
+        importance.plot(kind='barh', color='skyblue')
+        plt.title(f"Importancia de Variables en {model_name}")
+        plt.xlabel("Importancia")
+        plt.ylabel("Características")
+        plt.tight_layout()
+        plt.show()
+    else:
+        print(f"El modelo {model_name} no soporta la importancia de variables.")
