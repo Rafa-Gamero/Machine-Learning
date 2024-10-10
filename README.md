@@ -102,14 +102,5 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - [Óscar Sánchez Riveros](https://www.linkedin.com/in/oscar-sanchez-riveros/)
 - [Rafael Gamero Arrabal](https://www.linkedin.com/in/rafael-gamero-arrabal-619200186/)
 
-## Enlaces 
 
-- [Datos](https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud)
-- [Presentación]()
-
-## Puedes contactar con nosotros:
-
-- [Ana Nofuentes Solano](https://www.linkedin.com/in/ana-nofuentes-solano-654026a3/)
-- [Óscar Sánchez Riveros](https://www.linkedin.com/in/oscar-sanchez-riveros/)
-- [Rafael Gamero Arrabal](https://www.linkedin.com/in/rafael-gamero-arrabal-619200186/)
 
