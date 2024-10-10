@@ -36,6 +36,72 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - Las variables categóricas fueron transformadas en variables dummy utilizando One-Hot Encoding.
 - Las características fueron escaladas utilizando `RobustScaler` para mitigar el impacto de los valores atípicos sin perder su valor predictivo.
 
+## Modelado
+
+### Regresión Logística
+- **Accuracy**: 0.9350
+- **Precision**: 0.5762
+- **Recall**: 0.9522
+- **F1 Score**: 0.7180
+- **AUC**: 0.9427
+- **Confusion Matrix**:
+
+- **Gráfico de Importancia de Variables**:
+![Importancia Variables Regresión Logística](ruta_imagen_logistica.png)
+
+### Árbol de Decisión
+- **Accuracy**: 0.9998
+- **Precision**: 0.9981
+- **Recall**: 1.0000
+- **F1 Score**: 0.9991
+- **AUC**: 0.9999
+- **Confusion Matrix**:
+
+- **Gráfico de Importancia de Variables**:
+![Importancia Variables Árbol de Decisión](ruta_imagen_arbol.png)
+
+### Random Forest
+- **Accuracy**: 0.9999
+- **Precision**: 0.9984
+- **Recall**: 1.0000
+- **F1 Score**: 0.9992
+- **AUC**: 0.9999
+- **Confusion Matrix**:
+
+- **Gráfico de Importancia de Variables**:
+![Importancia Variables Random Forest](ruta_imagen_rf.png)
+
+### Gradient Boosting
+- **Accuracy**: 0.9979
+- **Precision**: 0.9770
+- **Recall**: 0.9998
+- **F1 Score**: 0.9883
+- **AUC**: 0.9988
+- **Confusion Matrix**:
+
+- **Gráfico de Importancia de Variables**:
+![Importancia Variables Gradient Boosting](ruta_imagen_gb.png)
+
+### Cuadro Comparativo de Métricas
+
+| Modelo               | Accuracy | Precision | Recall | F1 Score | AUC   |
+|----------------------|----------|-----------|--------|----------|-------|
+| Regresión Logística   | 0.9350   | 0.5762    | 0.9522 | 0.7180   | 0.9427|
+| Árbol de Decisión     | 0.9998   | 0.9981    | 1.0000 | 0.9991   | 0.9999|
+| Random Forest         | 0.9999   | 0.9984    | 1.0000 | 0.9992   | 0.9999|
+| Gradient Boosting     | 0.9979   | 0.9770    | 0.9998 | 0.9883   | 0.9988|
+
+## Enlaces 
+
+- [Datos](https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud)
+- [Presentación]()
+
+## Puedes contactar con nosotros:
+
+- [Ana Nofuentes Solano](https://www.linkedin.com/in/ana-nofuentes-solano-654026a3/)
+- [Óscar Sánchez Riveros](https://www.linkedin.com/in/oscar-sanchez-riveros/)
+- [Rafael Gamero Arrabal](https://www.linkedin.com/in/rafael-gamero-arrabal-619200186/)
+
 ## Enlaces 
 
 - [Datos](https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud)
