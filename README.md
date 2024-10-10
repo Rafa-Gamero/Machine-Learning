@@ -81,7 +81,7 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **F1 Score**: 0.9883
 - **AUC**: 0.9988
 - **Confusion Matrix**:
-![Importancia Variables Gradient Boosting](ruta_imagen_gb.png)
+![Matriz de confusion Gradient Boosting](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165059.png)
 
 - **Gráfico de Importancia de Variables**:
 ![Importancia Variables Gradient Boosting](ruta_imagen_gb.png)
