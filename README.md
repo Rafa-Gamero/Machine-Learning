@@ -56,7 +56,8 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **Recall**: 1.0000
 - **F1 Score**: 0.9991
 - **AUC**: 0.9999
-- **Confusion Matrix**: (C:\Users\Casa\Pictures\Screenshots\Captura de pantalla 2024-10-10 164926.png)
+- **Confusion Matrix**:
+- ![Matriz de Confusion Árbol de Decisión](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20165000.png)
 
 - **Gráfico de Importancia de Variables**:
 ![Importancia Variables Árbol de Decisión](C:\Users\Casa\Pictures\Screenshots\Captura de pantalla 2024-10-10 164926.png)
