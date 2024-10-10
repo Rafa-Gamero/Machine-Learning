@@ -56,7 +56,7 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 - **F1 Score**: 0.9991
 - **AUC**: 0.9999
 - **Confusion Matrix**:
-
+![Matriz de confusion ](C:\Users\Casa\Pictures\Screenshots\Captura de pantalla 2024-10-10 164926.png)
 - **Gráfico de Importancia de Variables**:
 ![Importancia Variables Árbol de Decisión](ruta_imagen_arbol.png)
 
