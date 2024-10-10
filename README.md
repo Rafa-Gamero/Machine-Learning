@@ -48,7 +48,7 @@ El archivo `card_transdata.csv` contiene las siguientes columnas:
 ![Matriz de Confusion Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164926.png)
 
 - **Gráfico de Importancia de Variables**:
-![Importancia Variables Regresión Logística](ruta_imagen_logistica.png)
+![Importancia Variables Regresión Logística](https://github.com/Rafa-Gamero/Machine-Learning/blob/main/Captura%20de%20pantalla%202024-10-10%20164943.png)
 
 ### Árbol de Decisión
 - **Accuracy**: 0.9998
