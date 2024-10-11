@@ -21,6 +21,7 @@ from sklearn.preprocessing import RobustScaler
 from imblearn.under_sampling import RandomUnderSampler
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from sklearn.model_selection import GridSearchCV
+import joblib
 
 
 def plot_target_balance(df, target_column='fraud'):
@@ -220,4 +221,41 @@ def plot_logistic_regression_importance(model, X_train):
 
     plt.tight_layout()
 
-    plt.show()     
+    plt.show()   
+
+
+def get_user_input():
+    # Collect inputs from the user
+    distance_from_home = st.number_input("Enter distance from home (e.g., 1.5):", min_value=0.0, format="%.2f")
+    distance_from_last_transaction = st.number_input("Enter distance from last transaction (e.g., 2.0):", min_value=0.0, format="%.2f")
+    ratio_to_median_purchase_price = st.number_input("Enter ratio to median purchase price (e.g., 0.75):", min_value=0.0, format="%.2f")
+    # Collect 'Yes' or 'No' inputs for the categorical fields
+    repeat_retailer = st.radio("Is this a repeat retailer?", ('Yes', 'No'))
+    used_chip = st.radio("Was a chip used?", ('Yes', 'No'))
+    used_pin_number = st.radio("Was a PIN used?", ('Yes', 'No'))
+    online_order = st.radio("Is this an online order?", ('Yes', 'No'))
+    # Convert the Yes/No responses into 0 and 1 encoded values
+    repeat_retailer_0 = 1 if repeat_retailer == 'No' else 0
+    repeat_retailer_1 = 1 if repeat_retailer == 'Yes' else 0
+    used_chip_0 = 1 if used_chip == 'No' else 0
+    used_chip_1 = 1 if used_chip == 'Yes' else 0
+    used_pin_number_0 = 1 if used_pin_number == 'No' else 0
+    used_pin_number_1 = 1 if used_pin_number == 'Yes' else 0
+    online_order_0 = 1 if online_order == 'No' else 0
+    online_order_1 = 1 if online_order == 'Yes' else 0
+    # Create a DataFrame with the necessary columns for the model
+    data = {
+        'distance_from_home': [distance_from_home],
+        'distance_from_last_transaction': [distance_from_last_transaction],
+        'ratio_to_median_purchase_price': [ratio_to_median_purchase_price],
+        'repeat_retailer_0': [repeat_retailer_0],
+        'repeat_retailer_1': [repeat_retailer_1],
+        'used_chip_0': [used_chip_0],
+        'used_chip_1': [used_chip_1],
+        'used_pin_number_0': [used_pin_number_0],
+        'used_pin_number_1': [used_pin_number_1],
+        'online_order_0': [online_order_0],
+        'online_order_1': [online_order_1]
+    }
+    features = pd.DataFrame(data)
+    return features      
