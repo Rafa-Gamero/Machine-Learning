@@ -98,7 +98,7 @@ The file `card_transdata.csv` contains the following columns:
 ## Links 
 
 - [Dataset](https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud)
-- [Presentation](https://www.canva.com/design/DAGTLP_zEBo/Bljr5ODYlKVV75xtbeGi6g/edit?utm_content=DAGTLP_zEBo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Presentation](https://www.canva.com/design/DAGTLP_zEBo/ufT_Eso4muMz71UY7lXamQ/view?utm_content=DAGTLP_zEBo&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## You can contact us:
 
